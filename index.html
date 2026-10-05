@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shagun & Pankaj - Wedding Celebration</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FAF3E0',
+                        creamLight: '#FFFDF9',
+                        raniPink: '#880E4F',
+                        raniDark: '#560027',
+                        raniLight: '#AD1457',
+                        gold: '#D4AF37',
+                        goldLight: '#F3E5AB'
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        script: ['Great Vibes', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #FAF3E0;
+            color: #560027;
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .font-script {
+            font-family: 'Great Vibes', cursive;
+        }
+        .gold-border {
+            border: 2px solid #D4AF37;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+        }
+        .mandala-bg {
+            background-image: radial-gradient(circle, rgba(136, 14, 79, 0.05) 10%, transparent 10%);
+            background-size: 30px 30px;
+        }
+        .mehndi-bg {
+            background: linear-gradient(rgba(86, 0, 39, 0.85), rgba(86, 0, 39, 0.85)), url("mehndi.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+        .haldi-bg {
+            background: linear-gradient(rgba(86, 0, 39, 0.85), rgba(86, 0, 39, 0.85)), url("haldi.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+         .haldi-bg {
+            background: linear-gradient(rgba(86, 0, 39, 0.85), rgba(86, 0, 39, 0.85)), url("Gemini_Generated_Image_wnjp5bwnjp5bwnjp.png");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-cream text-raniDark selection:bg-raniLight selection:text-white">
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative w-full h-screen flex flex-col items-center justify-between bg-creamLight text-raniDark py-12 px-4 text-center overflow-hidden mandala-bg">
+        <div class="opacity-80 transition-transform duration-1000 hover:scale-110">
+            <i class="fa-solid fa-om text-3xl text-gold mb-2"></i>
+            <p class="text-xs uppercase tracking-widest text-raniLight font-semibold">The Wedding Celebration</p>
+        </div>
+
+        <div class="my-auto max-w-3xl px-4">
+            <p class="text-lg md:text-2xl font-serif italic text-raniLight mb-4">Together with their families</p>
+            <h1 class="text-6xl md:text-8xl font-serif font-bold text-raniPink tracking-tight my-4">
+                Shagun <span class="font-script font-normal text-gold text-5xl md:text-7xl block md:inline my-2">&amp;</span> Pankaj
+            </h1>
+            <div class="w-24 h-0.5 bg-gold mx-auto my-6"></div>
+            <p class="text-sm md:text-base uppercase tracking-[0.3em] font-medium text-raniDark/80">
+                November 22, 2026 • Shalimar Garden
+            </p>
+        </div>
+
+        <div>
+            <a href="#main-content" class="flex flex-col items-center group focus:outline-none">
+                <span class="text-xs font-semibold tracking-widest text-raniLight uppercase mb-2 group-hover:text-gold transition-colors">Enter Celebration</span>
+                <div class="w-8 h-12 rounded-full border-2 border-gold flex items-start justify-center p-1">
+                    <div class="w-1.5 h-3 bg-raniPink rounded-full animate-bounce"></div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-cream/90 backdrop-blur-md border-b border-gold/35 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#hero" class="font-serif text-xl font-bold text-raniPink tracking-wider">S &amp; P</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider text-raniDark">
+                <a href="#couple" class="hover:text-raniPink transition-colors">Family</a>
+                <a href="#events" class="hover:text-raniPink transition-colors">Itinerary</a>
+                <a href="#gallery" class="hover:text-raniPink transition-colors">Gallery</a>
+                <a href="#location" class="hover:text-raniPink transition-colors">Venue</a>
+                <a href="#blessings" class="hover:text-raniPink transition-colors">Blessings</a>
+            </nav>
+            <a href="#blessings" class="hidden md:inline-block bg-raniPink text-cream px-5 py-2 rounded-full text-xs uppercase tracking-widest font-semibold hover:bg-raniDark transition-all shadow-md">
+                Send Wishes
+            </a>
+            <button id="menu-btn" class="md:hidden text-raniPink text-xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-creamLight border-b border-gold/20 px-4 py-4 space-y-3">
+            <a href="#couple" class="block text-sm font-semibold uppercase text-raniDark py-1">Family</a>
+            <a href="#events" class="block text-sm font-semibold uppercase text-raniDark py-1">Itinerary</a>
+            <a href="#gallery" class="block text-sm font-semibold uppercase text-raniDark py-1">Gallery</a>
+            <a href="#location" class="block text-sm font-semibold uppercase text-raniDark py-1">Venue</a>
+            <a href="#blessings" class="block text-sm font-semibold uppercase text-raniDark py-1">Blessings</a>
+        </div>
+    </header>
+
+    <div id="main-content">
+
+        <!-- COUPLE & FAMILY DETAILS SECTION -->
+        <section id="couple" class="py-20 px-4 max-w-6xl mx-auto mandala-bg">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-gold uppercase tracking-widest text-sm font-semibold block mb-2">The Blessed Union</span>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-raniPink mb-4">Bride &amp; Groom</h2>
+                <div class="w-16 h-0.5 bg-gold mx-auto mb-4"></div>
+                <p class="text-raniDark/80">With the divine blessings of our elders, we cordially invite you to celebrate the joyous wedding of our children .</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center">
+                <!-- Bride Card -->
+                <div class="bg-creamLight rounded-2xl p-8 gold-border text-center relative shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-raniPink text-cream w-12 h-12 rounded-full flex items-center justify-center shadow-md">
+                        <i class="fa-solid fa-venus text-xl text-gold"></i>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-3xl font-serif font-bold text-raniPink mb-2">Shagun</h3>
+                        <p class="text-xs uppercase tracking-widest text-gold font-semibold mb-6">Bride</p>
+                        <div class="w-full h-[1px] bg-gold/30 mb-6"></div>
+                        <p class="text-xs uppercase tracking-wider text-raniLight font-medium mb-1">Daughter of</p>
+                        <p class="text-lg font-serif font-semibold text-raniDark">Mr. Lokesh Kumar Sharma</p>
+                        <p class="text-lg font-serif font-semibold text-raniDark">&amp;</p>
+                        <p class="text-lg font-serif font-semibold text-raniDark">Mrs. Kartavya Sharma</p>
+                        <p class="mt-6 text-sm text-raniDark/70 italic">"Embracing new traditions with a heart full of grace and joy."</p>
+                    </div>
+                </div>
+
+                <!-- Groom Card -->
+                <div class="bg-creamLight rounded-2xl p-8 gold-border text-center relative shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-raniPink text-cream w-12 h-12 rounded-full flex items-center justify-center shadow-md">
+                        <i class="fa-solid fa-mars text-xl text-gold"></i>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-3xl font-serif font-bold text-raniPink mb-2">Pankaj</h3>
+                        <p class="text-xs uppercase tracking-widest text-gold font-semibold mb-6">Groom</p>
+                        <div class="w-full h-[1px] bg-gold/30 mb-6"></div>
+                        <p class="text-xs uppercase tracking-wider text-raniLight font-medium mb-1">Son of</p>
+                        <p class="text-lg font-serif font-semibold text-raniDark">Mr. Lakshman Prasad Bhatt</p>
+                        <p class="text-lg font-serif font-semibold text-raniDark">&amp;</p>
+                        <p class="text-lg font-serif font-semibold text-raniDark">Mrs. Beena Bhatt</p>
+                        <p class="mt-6 text-sm text-raniDark/70 italic">"Stepping into a lifetime of love and shared adventures."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ITINERARY SECTION -->
+        <section id="events" class="py-20 px-4 bg-raniDark text-cream relative">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-gold uppercase tracking-widest text-sm font-semibold block mb-2">Celebration Schedule</span>
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-cream mb-4">Wedding Itinerary</h2>
+                    <div class="w-16 h-0.5 bg-gold mx-auto mb-4"></div>
+                    <p class="text-cream/80">Join us in celebrating the rituals, music, and festivities of our special days in Delhi</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+
+
+                     <div class="haldi-bg border border-gold/40 rounded-xl p-6 shadow-lg hover:border-gold transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="text-gold text-xs uppercase tracking-widest font-semibold">Day 1</span>
+                                <h3 class="text-2xl font-serif font-bold text-cream mt-1">Haldi</h3>
+                            </div>
+                            <div class="bg-gold text-raniDark px-3 py-1 rounded-full text-xs font-bold uppercase">
+                                Nov 19, 2026
+                            </div>
+                        </div>
+                        <p class="text-cream/90 text-sm mb-4">Turmeric blessings followed by power-packed musical performances and joyous celebrations[cite: 1].</p>
+                        <div class="flex flex-col sm:flex-row sm:items-center text-xs text-gold gap-2">
+                            <!-- <span><i class="fa-regular fa-clock mr-1"></i> 2:00 PM Onwards</span> -->
+                            <span><i class="fa-solid fa-location-dot mr-1"></i> Shalimar Garden, Shahibabad</span>
+                        </div>
+                    </div>
+                    <!-- Event 1: Mehendi -->
+                    <div class="mehndi-bg border border-gold/40 rounded-xl p-6 shadow-lg hover:border-gold transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="text-gold text-xs uppercase tracking-widest font-semibold">Day 2</span>
+                                <h3 class="text-2xl font-serif font-bold text-cream mt-1">Mehendi &amp; Sangeet Night</h3>
+                            </div>
+                            <div class="bg-gold text-raniDark px-3 py-1 rounded-full text-xs font-bold uppercase">
+                                Nov 20, 2026
+                            </div>
+                        </div>
+                        <p class="text-cream/90 text-sm mb-4">An evening filled with vibrant hues, folk music, intricate henna designs, and cheerful dances.</p>
+                        <div class="flex flex-col sm:flex-row sm:items-center text-xs text-gold gap-2">
+                            <!-- <span><i class="fa-regular fa-clock mr-1"></i> 4:00 PM Onwards</span> -->
+                        <span><i class="fa-solid fa-location-dot mr-1"></i> Shalimar Garden, Shahibabad</span>   
+                        </div>
+                    </div>
+
+                    <!-- Event 2: Haldi & Sangeet -->
+                   
+
+                    <!-- Event 3: Wedding Ceremony -->
+                    <div class="haldi-bg border border-gold/40 rounded-xl p-6 backdrop-blur-sm hover:border-gold transition-all md:col-span-2">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <span class="text-gold text-xs uppercase tracking-widest font-semibold">Day 3</span>
+                                <h3 class="text-2xl font-serif font-bold text-cream mt-1">Wedding Ceremony</h3>
+                            </div>
+                            <div class="bg-gold text-raniDark px-3 py-1 rounded-full text-xs font-bold uppercase">
+                                Nov 28, 2026
+                            </div>
+                        </div>
+                        <p class="text-cream/90 text-sm mb-4">The auspicious Phere, sacred vows, and traditional wedding rituals under the sacred mandap.</p>
+                        <div class="flex flex-col sm:flex-row sm:items-center text-xs text-gold gap-4">
+                            <span><i class="fa-regular fa-clock mr-1"></i> 8:00 PM Baraat Arrival</span>
+                            <span><i class="fa-solid fa-location-dot mr-1"></i> New India Campus Party Lawn & Banquet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY SECTION -->
+        <section id="gallery" class="py-20 px-4 bg-creamLight mandala-bg">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-gold uppercase tracking-widest text-sm font-semibold block mb-2">Memories</span>
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-raniPink mb-4">Photo Gallery</h2>
+                    <div class="w-16 h-0.5 bg-gold mx-auto mb-4"></div>
+                    <p class="text-raniDark/80">A glimpse into our journey and pre-wedding celebrations.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                   
+                    </div>
+                    <div class="overflow-hidden rounded-xl gold-border shadow-md relative group aspect-[4/3]">
+                        <img src="COUPLE.jpeg" alt="Mehendi Ceremony" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-raniDark/80 via-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                            <p class="text-cream font-serif text-lg">Love Birds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WEDDING LOCATION SECTION -->
+        <section id="location" class="py-20 px-4 bg-cream mandala-bg">
+            <div class="max-w-4xl mx-auto bg-creamLight border-2 border-raniPink/30 rounded-2xl p-8 md:p-12 shadow-xl text-center">
+                <span class="text-raniLight font-semibold text-sm uppercase tracking-widest">Main Event Venue</span>
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-raniPink mt-2 mb-4">New India Campus Party Lawn & Banquet</h2>
+                <div class="w-16 h-0.5 bg-gold mx-auto mb-6"></div>
+                <p class="text-raniDark/80 text-base mb-6">
+                    📅 <strong>Date:</strong> November 21, 2026<br>
+                    ⏰ <strong>Time:</strong> 8:00 PM Onwards<br>
+                    📍 <strong>Location:</strong> Shalimar Garden, Shahibabad 
+                </p>
+
+                <!-- Map Embed -->
+                <div class="w-full h-80 rounded-xl overflow-hidden border border-gold/40 shadow-inner mb-6">
+                   <!-- <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.996167732274!2d77.3598!3d28.6700!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb5b99999999%3A0x88981ef8d4ec9677!2sNew%20India%20Campus%20Party%20Lawn%20%26%20Banquet%2C%20Sahibabad!5e0!3m2!1sen!2sin!4v1650000000000!5m2!1sen!2sin" 
+    width="100%" 
+    height="100%" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe> -->
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.8538533713768!2d77.3407794742962!3d28.694018081288114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfa4fed42086d%3A0x84d2f2ef2d22038e!2sNew%20India%20Campus%20Party%20Lawn%20%26%20Banquet!5e0!3m2!1sen!2sin!4v1791203335791!5m2!1sen!2sin"  width="100%" 
+    height="100%" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <a href="https://maps.google.com/?q=The+Oberoi+New+Delhi" target="_blank" class="inline-block bg-raniPink text-cream px-8 py-3 rounded-lg font-semibold shadow-lg hover:bg-raniDark transition-all">
+                    <i class="fa-solid fa-car mr-2"></i> Get Directions on Google Maps
+                </a>
+            </div>
+        </section>
+
+        <!-- BLESSINGS & WISHES SECTION -->
+        <section id="blessings" class="py-20 px-4 bg-creamLight">
+            <div class="max-w-3xl mx-auto bg-cream border-2 border-gold/40 rounded-2xl p-8 md:p-12 shadow-xl mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-raniPink text-center mb-3">Send Your Blessings</h2>
+                <p class="text-center text-raniDark/80 mb-8">Your presence &amp; blessings mean the world to Shagun &amp; Pankaj.</p>
+                
+                <form id="blessingForm" onsubmit="handleBlessingSubmit(event)" class="space-y-6">
+                    <div>
+                        <label for="relativeName" class="block text-raniPink font-semibold mb-2 text-sm uppercase tracking-wider">Relative / Guest Name *</label>
+                        <input type="text" id="relativeName" required placeholder="Enter your full name" class="w-full p-4 border border-gold/50 rounded-lg bg-creamLight text-raniDark outline-none focus:border-raniPink transition-colors">
+                    </div>
+                    <div>
+                        <label for="relativeBlessing" class="block text-raniPink font-semibold mb-2 text-sm uppercase tracking-wider">Your Blessings &amp; Wishes *</label>
+                        <textarea id="relativeBlessing" required rows="4" placeholder="Write your heartfelt wishes for the couple..." class="w-full p-4 border border-gold/50 rounded-lg bg-creamLight text-raniDark outline-none focus:border-raniPink transition-colors resize-vertical"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-raniPink text-cream py-4 font-bold rounded-lg shadow-md hover:bg-raniDark transition-all text-lg">
+                        Post Blessing ✨
+                    </button>
+                </form>
+            </div>
+
+            <!-- Blessings Wall Grid -->
+            <div class="max-w-5xl mx-auto px-4">
+                <h3 class="text-center font-serif text-3xl font-bold text-raniPink mb-8">Wall of Blessings</h3>
+                <div id="blessingsWallGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Dynamic cards will appear here -->
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-raniDark text-cream py-12 px-4 border-t border-gold/30 text-center">
+        <div class="max-w-4xl mx-auto space-y-4">
+            <h2 class="text-3xl font-script text-gold">Shagun &amp; Pankaj</h2>
+            <p class="text-xs uppercase tracking-[0.2em] text-cream/70">With the love and blessings of both families</p>
+            <div class="w-12 h-0.5 bg-gold mx-auto"></div>
+            <p class="text-xs text-cream/50 pt-4">&copy; 2026 Shagun &amp; Pankaj Wedding Celebration. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Mobile Navigation Menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Blessings Wall Script
+        document.addEventListener('DOMContentLoaded', function() {
+            renderBlessings();
+        });
+
+        function handleBlessingSubmit(event) {
+            event.preventDefault();
+            
+            const nameInput = document.getElementById('relativeName');
+            const blessingInput = document.getElementById('relativeBlessing');
+            
+            const newBlessing = {
+                name: nameInput.value.trim(),
+                message: blessingInput.value.trim(),
+                date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+            };
+            
+            let blessings = JSON.parse(localStorage.getItem('wedding_blessings') || '[]');
+            blessings.unshift(newBlessing);
+            
+            localStorage.setItem('wedding_blessings', JSON.stringify(blessings));
+            
+            nameInput.value = '';
+            blessingInput.value = '';
+            renderBlessings();
+        }
+
+        function renderBlessings() {
+            const grid = document.getElementById('blessingsWallGrid');
+            const blessings = JSON.parse(localStorage.getItem('wedding_blessings') || '[]');
+            
+            if (blessings.length === 0) {
+                grid.innerHTML = '<p class="text-center text-raniDark/70 italic col-span-full py-8">No blessings posted yet. Be the first to bless the couple!</p>';
+                return;
+            }
+            
+            grid.innerHTML = blessings.map(b => `
+                <div class="bg-creamLight border-l-4 border-raniPink rounded-xl p-6 shadow-md flex flex-col justify-between">
+                    <p class="text-raniDark text-base italic mb-4 leading-relaxed">"${escapeHtml(b.message)}"</p>
+                    <div class="border-t border-gold/30 pt-3 flex justify-between items-center text-xs">
+                        <strong class="text-raniPink font-semibold text-sm">${escapeHtml(b.name)}</strong>
+                        <span class="text-raniDark/60">${b.date}</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function escapeHtml(text) {
+            const map = {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            };
+            return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+        }
+    </script>
+</body>
+</html>
